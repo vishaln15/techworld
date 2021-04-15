@@ -13,7 +13,7 @@ function ProductScreen (props){
         return () => {
             //
         };
-    }, [dispatch]);
+    }, [dispatch, props.match.params.id]);
     
     return <div>
     <div className="back-to-result">
