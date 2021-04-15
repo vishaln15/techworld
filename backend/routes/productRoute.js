@@ -35,7 +35,6 @@ router.get("/:id", async (req, res) => {
     else {
         res.status(404).send({ message: 'Product not found.'})
     }
-
 })
 
 export default router;
