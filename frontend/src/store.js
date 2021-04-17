@@ -6,6 +6,7 @@ import Cookie from 'js-cookie';
 import { cartReducer } from './reducers/cartReducers';
 
 const userInfo = Cookie.getJSON('userInfo') || null;
+const cartItems = Cookie.getJSON('cartItems')|| [];
 
 const reducer = combineReducers({
     productList: productListReducer,
@@ -16,10 +17,7 @@ const reducer = combineReducers({
     cart: cartReducer
 })
 
-const cartItems = Cookie.getJSON('cartItems')|| [];
-
-const initialState = {cart:{cartItems}, userSignIn : userInfo};
-
+const initialState = {cart:{cartItems}, userSignIn : {userInfo}};
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

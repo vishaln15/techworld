@@ -87,7 +87,6 @@ function CartScreen(props){
       </button>
 
     </div>
-
   </div>
 }
 

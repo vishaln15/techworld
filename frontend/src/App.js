@@ -61,8 +61,6 @@ function App() {
 
             <footer className="footer">
             &copy;&nbsp;&nbsp;All Rights Reserved
-                <Link to="/products">Click me</Link>
-              
             </footer>
         </div>
         </BrowserRouter>

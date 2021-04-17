@@ -31,6 +31,7 @@ const saveProduct = (product) => async(dispatch, getState) => {
             'Authorization': 'Bearer' + userInfo.token
         }});
         dispatch({type: PRODUCT_SAVE_SUCCESS, payload: data});
+
     } catch (error) {
         dispatch({type: PRODUCT_SAVE_FAIL, payload: error.message});
     }
