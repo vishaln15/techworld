@@ -13,8 +13,10 @@ router.get("/createProduct", async (req, res) => {
         count: 78,
         description: 'very good phone',
         rating: 4.5,
-        numReviews: 456
+        numReviews: 456,
+        countInStock: 0
     });
+    
     const newProduct = await product.save();
     if (newProduct) {
         return res.status(201).send({ message: 'New Product created.', data: newProduct });

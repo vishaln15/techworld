@@ -74,16 +74,15 @@ body{
 .products li{
   flex: 0 1 34rem;
   margin: 1rem;
-  height: 50rem;
+  height: 35rem;
   border-bottom: 0.1rem #c0c0c0 solid;
   list-style-type: none;
-  padding: 0;
+  padding-bottom: 2rem;
 }
 
 .product-image{
   max-width: 34rem;
   max-height: 34rem;
-
 }
 
 a{
@@ -93,6 +92,11 @@ a{
 a:hover{
   color: #ff8000;
 }
+
+link {
+  text-decoration: none;
+}
+
 .product{
   display: flex;
   flex-direction: column;
@@ -102,6 +106,8 @@ a:hover{
 .product-name{
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
 }
 
 .product-brand{
@@ -210,17 +216,67 @@ a:hover{
 
 .button{
   padding: 1rem;
-  border: .2rem #808080 solid;
+  border: 0.1rem #808080 solid;
+  border-radius: 0.5rem;
   cursor: pointer;
-  border-radius: 1rem;
-  background-color: #f0c040;
+  margin-left: 1rem;
 }
 
 .button:hover{
-  border: .25rem #404040 solid;
-  font-weight: bolder;
+  background-color: #b6b5b5;
 }
 
 .button.primary{
   background-color: #e7b324;
+}
+
+/* Cart */
+
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-items: flex-start;
+}
+.cart-list {
+  flex: 3 1 60rem;
+}
+.cart-action {
+  flex: 1 1 20rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.cart-list-container {
+  padding: 0;
+  list-style-type: none;
+  padding: 1rem;
+}
+.cart-list-container li {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.cart-list-container li img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+.cart-list-container li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cart-image {
+  flex: 1 1;
+}
+.cart-name {
+  flex: 8 1;
+}
+.cart-price {
+  flex: 1 1;
+  font-size: 2.5rem;
+  text-align: right;
 }

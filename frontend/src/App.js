@@ -1,7 +1,7 @@
-import './App.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
 
 function App() {
 
@@ -17,15 +17,15 @@ function App() {
     <BrowserRouter>
     <div className="grid-container">
             <header className="header">
-                <div className="brand">
+                <div className="brand"> 
                     <button onClick={openMenu}>
                         &#9776;
                     </button>
                     <Link to="/">TechWorld</Link>
                 </div>
                 <div className="header-links">
-                    <a href="cart">Cart</a>
-                    <a href="signin">&emsp;SignIn</a>
+                    <Link to="/cart">Cart</Link>
+                    <a href="signin">&emsp;SignIn&emsp;</a>
                 </div>
             </header>
             <aside className="sidebar">
@@ -40,13 +40,14 @@ function App() {
             <main className="main">
                 <div className="content">
                   <Route path="/product/:id" component={ProductScreen} />
+                  <Route path="/cart/:id?" component={CartScreen} />
                   <Route path="/" exact = {true} component={HomeScreen} />
                 
                 </div>
             </main>
 
             <footer className="footer">
-                All Rights Reserved
+              &copy;&nbsp;&nbsp;All Rights Reserved
             </footer>
         </div>
         </BrowserRouter>
