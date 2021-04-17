@@ -14,7 +14,7 @@ router.get("/createProduct", async (req, res) => {
         description: 'very good phone',
         rating: 4.5,
         numReviews: 456,
-        countInStock: 0
+        countInStock: 5
     });
     
     const newProduct = await product.save();
