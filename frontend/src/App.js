@@ -2,8 +2,15 @@ import './App.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import SignInScreen from './screens/SignInScreen';
+import { useSelector } from 'react-redux';
+import RegisterScreen from './screens/RegisterScreen';
+import CreateProductScreen from './screens/CreateProductsScreen';
 
 function App() {
+
+  const userSignIn = useSelector(state => state.userSignIn);
+  const userInfo = userSignIn && userSignIn.userInfo;
 
   const openMenu = () =>{
     document.querySelector(".sidebar").classList.add("open");
@@ -24,8 +31,11 @@ function App() {
                     <Link to="/">TechWorld</Link>
                 </div>
                 <div className="header-links">
-                    <a href="cart">Cart</a>
-                    <a href="signin">&emsp;SignIn</a>
+                    <a href="cart">&emsp;Cart</a>
+                    {
+                      userInfo ? <Link to='/profile'>&emsp;{userInfo.name}&ensp;</Link> : <Link to='/signin'>&ensp;SignIn&emsp;</Link>
+                    }
+                    
                 </div>
             </header>
             <aside className="sidebar">
@@ -39,6 +49,9 @@ function App() {
 
             <main className="main">
                 <div className="content">
+                  <Route path='/products' component={CreateProductScreen} />
+                  <Route path='/signin' component={SignInScreen} />
+                  <Route path='/register' component={RegisterScreen} />
                   <Route path="/product/:id" component={ProductScreen} />
                   <Route path="/" exact = {true} component={HomeScreen} />
                 
@@ -47,6 +60,7 @@ function App() {
 
             <footer className="footer">
                 All Rights Reserved
+                <Link to="/products">Click me</Link>
             </footer>
         </div>
         </BrowserRouter>

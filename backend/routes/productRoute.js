@@ -27,6 +27,30 @@ router.get("/", async (req, res) => {
     res.send(products);
 });
 
+router.post("/", async (req, res) => {
+    const product = new Product({
+        name: req.body.name,
+        image: req.body.image,
+        brand: req.body.brand,
+        price: req.body.price,
+        category: req.body.category,
+        count: req.body.count,
+        description: req.body.description,
+        rating: req.body.rating,
+        numReviews: req.body.numReviews,
+    });
+
+    const newProduct = await product.save();
+
+    if(newProduct){
+        return res.status(201).send({message: 'New product created!', data: newProduct});
+    }
+
+    return res.status(500).send({message: 'Error while Creating Product!'});
+
+
+})
+
 router.get("/:id", async (req, res) => {
     const product = await Product.findOne({ _id : req.params.id });
     if (product) {
