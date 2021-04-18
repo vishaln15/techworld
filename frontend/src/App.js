@@ -31,7 +31,7 @@ function App() {
                     <Link to="/">TechWorld</Link>
                 </div>
                 <div className="header-links">
-                    <a href="cart">&emsp;Cart</a>
+                    <Link to='/cart'>&emsp;Cart</Link>
                     {
                       userInfo ? <Link to='/profile'>&emsp;{userInfo.name}&ensp;</Link> : <Link to='/signin'>&ensp;SignIn&emsp;</Link>
                     }

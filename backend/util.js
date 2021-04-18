@@ -24,13 +24,15 @@ const isAuth = (req, res, next) => {
             if(err){
                 return res.status(401).send({msg: 'Invalid Token'});
             }
-            req.user = token;
+            req.user = decode;
             next();
             return
         })
     }
+    else{
+        return res.status(401).send({msg: 'No token provided!'});
+    }
 
-    return res.status(401).send({msg: 'No token provided!'});
 }
 
 const isAdmin = (req, res, next) => {

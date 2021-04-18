@@ -40,7 +40,7 @@ function ProductScreen (props) {
                     {product.rating} Stars ({product.numReviews} Reviews)
                 </li>
                 <li>
-                    Price: <b>Rs. {product.price}</b>
+                    Price: <b>₹ {product.price}</b>
                 </li>
                 <li>
                     Description:
@@ -53,7 +53,7 @@ function ProductScreen (props) {
         <div className="details-action">
             <ul>
                 <li>
-                    Price: Rs.{product.price}
+                    Price: ₹{product.price}
                 </li>
                 <li>
                     Status: {product.countInStock > 0 ? "In Stock" : "Unavailable"}

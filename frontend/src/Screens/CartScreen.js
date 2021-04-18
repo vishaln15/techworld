@@ -27,6 +27,8 @@ function CartScreen(props){
     }
     
     return <div className="cart">
+       
+        <Link to="/">&larr;&nbsp;Back to result</Link>
     <div className="cart-list">
       <ul className="cart-list-container">
         <li>
@@ -68,7 +70,7 @@ function CartScreen(props){
                   </div>
                 </div>
                 <div className="cart-price">
-                  ${item.price}
+                ₹{item.price}
                 </div>
               </li>
             )
@@ -80,7 +82,7 @@ function CartScreen(props){
       <h3>
         Subtotal ( {cartItems.reduce((a, c) => Number(a) + Number(c.qty), 0)} items)
         :
-         $ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+        ₹ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
       </h3>
       <button onClick={checkoutHandler} className="button primary full-width" disabled={cartItems.length === 0}>
         Proceed to Checkout
