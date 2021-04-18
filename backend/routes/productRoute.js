@@ -53,7 +53,7 @@ router.post("/", isAuth, isAdmin, async (req, res) => {
 
 })
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", isAuth, isAdmin, async (req, res) => {
     const productId = req.params.id;
     const product = await Product.findById(productId);
     if(product){
@@ -92,7 +92,7 @@ router.delete("/:id", isAuth, isAdmin, async(req, res) => {
     }
     
     else{
-        res.send('Error in Product Deletion!');s
+        res.send('Error in Product Deletion!');
     }
 });
 

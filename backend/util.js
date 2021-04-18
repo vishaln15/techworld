@@ -10,15 +10,14 @@ const getToken = (user) => {
             isAdmin: user.isAdmin
         }
         , config.JWT_SECRET, {
-        expiresIn: '48hrs'
+        expiresIn: '48h'
     });
 };
 
 const isAuth = (req, res, next) => {
     const token = req.headers.authorization;
-    
     if (token){
-        const onlyToken = token.slice(7, token.length);
+        const onlyToken = token.slice(6, token.length);
         jwt.verify(onlyToken, config.JWT_SECRET, (err, decode) => {
 
             if(err){
@@ -36,7 +35,6 @@ const isAuth = (req, res, next) => {
 }
 
 const isAdmin = (req, res, next) => {
-    console.log(req.user);
     if(req.user && req.user.isAdmin){
         return next();
     } 
