@@ -1,6 +1,6 @@
 import express from 'express';
 import Order from '../models/orderModel';
-import { isAuth, isAdmin } from '../util'
+import { isAuth } from '../util'
 
 const router = express.Router();
 
@@ -22,7 +22,7 @@ router.get("/:id", isAuth, async (req, res) => {
 router.post("/", isAuth, async (req, res) => {
     const newOrder = new Order({
         user: req.user._id,
-        orderitems: req.body.orderitems,
+        orderItems: req.body.orderItems,
         shipping: req.body.shipping,
         payment: req.body.payment,
         itemsPrice: req.body.itemsPrice,
@@ -41,6 +41,7 @@ router.post("/", isAuth, async (req, res) => {
 
 router.put("/:id/pay", isAuth, async (req, res) => {
     const order = await Order.findById(req.params.id);
+    console.log(order);
     if (order) {
       order.isPaid = true;
       order.paidAt = Date.now();

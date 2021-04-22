@@ -4,7 +4,7 @@ import { isAuth, isAdmin } from "../util";
 
 const router = express.Router();
 
-router.get("/createProduct", isAuth, isAdmin, async (req, res) => {
+router.get("/createProduct", async (req, res) => {
     const product = new Product({
         name: 'OnePlus 9',
         image:'/images/op9.jpg',

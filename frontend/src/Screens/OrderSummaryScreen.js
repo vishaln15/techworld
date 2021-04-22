@@ -6,20 +6,26 @@ import { detailsOrder, payOrder } from '../actions/orderActions';
 function OrderScreen(props) {
 
   const orderPay = useSelector(state => state.orderPay);
-  const { loading: loadingPay } = orderPay;
+  const { loading: loadingPay, success: successPay} = orderPay;
   const dispatch = useDispatch();
   const orderDetails = useSelector(state => state.orderDetails);
   const { loading, order, error } = orderDetails;
 
   useEffect(() => {
-    dispatch(detailsOrder(props.match.params.id));
+    if (successPay){
+      props.history.push("/profile");
+    }
+    else{
+      dispatch(detailsOrder(props.match.params.id));
+    }
+    
     return () => {
     };
 
-  }, [dispatch, props.match.params.id]);
+  }, [dispatch, props.match.params.id, successPay, props.history]);
 
-  const handleSuccessPayment = (paymentResult) => {
-    dispatch(payOrder(order, paymentResult));
+  const handleSuccessPayment = () => {
+    dispatch(payOrder(order));
   }
 
 
@@ -82,7 +88,7 @@ function OrderScreen(props) {
                         </div>
                       </div>
                       <div className="cart-price">
-                        ${item.price}
+                      ₹{item.price}
                       </div>
                     </li>
                   )
@@ -104,19 +110,19 @@ function OrderScreen(props) {
             </li>
             <li>
               <div>Items</div>
-              <div>${order.itemsPrice}</div>
+              <div>₹{order.itemsPrice}</div>
             </li>
             <li>
               <div>Shipping</div>
-              <div>${order.shippingPrice}</div>
+              <div>₹{order.shippingPrice}</div>
             </li>
             <li>
               <div>Tax</div>
-              <div>${order.taxPrice}</div>
+              <div>₹{order.taxPrice}</div>
             </li>
             <li>
               <div>Order Total</div>
-              <div>${order.totalPrice}</div>
+              <div>₹{order.totalPrice}</div>
             </li>
           </ul>
         </div>
