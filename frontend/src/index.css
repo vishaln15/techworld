@@ -411,3 +411,9 @@ tbody>tr:nth-child(odd){
 .placeorder-actions-payment > div {
   width: 100%;
 }
+
+/* Profile Screen */
+.myorders{
+  margin-left: 1rem;
+  font-weight: bold;
+}

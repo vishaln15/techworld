@@ -46,7 +46,7 @@ function ProfileScreen(props) {
         <form onSubmit={submitHandler} >
           <ul className="form-container">
             <li>
-              <h2>User Profile</h2>
+              {userInfo.isAdmin ? <h2>Admin Profile</h2> : <h2>User Profile</h2>}
             </li>
             <li>
               {loading && <div>Loading...</div>}
