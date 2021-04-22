@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import productRoute from './routes/productRoute';
 import userRoute from './routes/userRoute';
-import bodyParser from 'body-parser';
+import orderRoute from './routes/orderRoute';
 
 dotenv.config();
 
@@ -13,13 +13,13 @@ mongoose.connect(mongodbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
-}).then(() => console.log("Connected to DB"))
-.catch(error => console.log(error.reason));
+}).catch(error => console.log(error.reason));
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
+app.use("/api/orders", orderRoute);
 
 app.listen(5000, () => { console.log("Server started at http://localhost:5000")});

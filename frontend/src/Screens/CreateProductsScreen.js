@@ -15,13 +15,13 @@ function CreateProductScreen (props){
     const [description, setDescription] = useState('');
 
     const productList = useSelector(state => state.productList);
-    const {loading, products, error} = productList;
+    const { products } = productList;
 
     const productSave = useSelector(state => state.productSave);
     const {loading: loadingSave, success: successSave, error: errorSave} = productSave;
 
     const productDelete = useSelector(state => state.productDelete);
-    const {loading: loadingDelete, success: successDelete, error: errorDelete} = productDelete;
+    const { success: successDelete } = productDelete;
 
     const dispatch = useDispatch();
 
@@ -33,7 +33,7 @@ function CreateProductScreen (props){
         return () => {
             //
         };
-    }, [successSave, successDelete]);
+    }, [successSave, successDelete, dispatch]);
     
     const openModal = (product) => {
         setModalVisible(true);

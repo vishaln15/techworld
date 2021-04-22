@@ -48,8 +48,6 @@ router.post('/register', async(req, res) => {
     }
 })
 
-
-
 router.get("/createAdmin", async(req, res) => {
 
     try {

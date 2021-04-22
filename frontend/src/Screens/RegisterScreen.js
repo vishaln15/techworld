@@ -4,23 +4,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import { register } from "../actions/userActions";
 
 function RegisterScreen (props){
-
-    
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const userRegister = useSelector(state => state.userRegister);
     const { userInfo, loading, error} = userRegister;
     const dispatch = useDispatch();
+    const redirect = props.location.search?props.location.search.split("=")[1]:'/';
 
     useEffect(() => {
         if(userInfo){
-            props.history.push("/");
+            props.history.push(redirect);
         }
         return () => {
             //
         };
-    }, [userInfo, props.history]);
+    }, [userInfo, props.history, redirect]);
     
     const submitHandler = (e) => {
         e.preventDefault();
@@ -63,7 +62,8 @@ function RegisterScreen (props){
                     <button type="submit" className="button primary">Register</button>
                 </li>
                 <li>
-                    Already have a TechWorld account? <Link to='/signin'>Sign In</Link>
+                    Already have a TechWorld account? 
+                    <Link to={redirect === "/" ? "signin" : "signin?redirect="+ redirect} className="button secondary text-center">Create your TechWorld account</Link>
                 </li>
 
             </ul>

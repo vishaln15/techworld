@@ -44,13 +44,11 @@ router.post("/", isAuth, isAdmin, async (req, res) => {
 
     const newProduct = await product.save();
 
-    if(newProduct){
+    if(newProduct) {
         return res.status(201).send({message: 'New product created!', data: newProduct});
     }
 
     return res.status(500).send({message: 'Error while Creating Product!'});
-
-
 })
 
 router.put("/:id", isAuth, isAdmin, async (req, res) => {
