@@ -15,10 +15,10 @@ import {
 
 import axios from 'axios';
 
-const listProducts = () => async (dispatch) => {
+const listProducts = (category = '') => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQUEST });
-        const { data } = await axios.get("/api/products");
+        const { data } = await axios.get("/api/products?category=" + category);
         dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data});
     }
     catch (error) {

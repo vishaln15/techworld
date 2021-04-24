@@ -7,15 +7,12 @@ function HomeScreen (props){
 
     const productList = useSelector(state => state.productList);
     const { products, loading, error } = productList;
+    const category = props.match.params.id ? props.match.params.id : '';
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(listProducts());
-
-        return () => {
-            //
-        };
-    }, [dispatch])
+        dispatch(listProducts(category));
+    }, [category, dispatch])
 
     return loading ? <div>Loading...</div> :
         error ? <div>{error}</div> :
