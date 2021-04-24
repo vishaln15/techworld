@@ -35,6 +35,7 @@ function PlaceOrderScreen(props) {
         if (success) {
           props.history.push("/order/"+order._id)
         }
+        // eslint-disable-next-line
   }, [props.history, success]);
 
   return <div>

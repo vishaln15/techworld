@@ -25,8 +25,14 @@ router.get("/createProduct", async (req, res) => {
 })
 
 router.get("/", async (req, res) => {
-    const products = await Product.find({});
-    res.send(products);
+    if (req.query.category) {
+        const products = await Product.find({ category: req.query.category });
+        return res.send(products);
+    }
+    else {
+        const products = await Product.find({});
+        return res.send(products);
+    }         
 });
 
 router.post("/", isAuth, isAdmin, async (req, res) => {
