@@ -14,7 +14,10 @@ function HomeScreen (props){
         dispatch(listProducts(category));
     }, [category, dispatch])
 
-    return loading ? <div>Loading...</div> :
+    return (
+        <>
+        { category && <h2 className="category">{category}</h2> }
+        {loading ? <div>Loading...</div> :
         error ? <div>{error}</div> :
         <ul className="products">
             {products &&
@@ -33,7 +36,9 @@ function HomeScreen (props){
                     </div>
                 </li>)
             }              
-        </ul>
+        </ul>}
+        </>
+    )
 }
 
 export default HomeScreen;

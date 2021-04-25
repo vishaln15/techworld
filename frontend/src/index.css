@@ -145,7 +145,6 @@ link {
   width: 30rem;
   background-color: #f0f0f0;
   height: 100%;
-  
 }
 
 .sidebar.open{
@@ -164,6 +163,10 @@ link {
   position: absolute;
   right: .5rem;
   top: 1.5rem;
+}
+
+.category {
+  padding-left: 2rem;
 }
 
 /* Product Details */
