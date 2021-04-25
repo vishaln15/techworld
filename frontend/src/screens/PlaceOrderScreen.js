@@ -1,3 +1,4 @@
+import Cookie from 'js-cookie';
 import React, {useEffect}  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -29,6 +30,7 @@ function PlaceOrderScreen(props) {
     dispatch(createOrder({
       orderItems: cartItems, shipping, payment, itemsPrice, shippingPrice, taxPrice, totalPrice
     }));
+    Cookie.remove("cartItems");
   }
 
   useEffect(() => {
@@ -90,7 +92,7 @@ function PlaceOrderScreen(props) {
                       </div>
                     </div>
                     <div className="cart-price">
-                      ${item.price}
+                      ₹{item.price}
                     </div>
                   </li>
                 )

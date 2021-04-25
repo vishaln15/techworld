@@ -35,9 +35,6 @@ function ProfileScreen(props) {
       setPassword(userInfo.password);
     }
     dispatch(listMyOrders());
-    return () => {
-
-    };
   }, [dispatch, userInfo])
 
   return <div className="profile">
@@ -110,7 +107,7 @@ function ProfileScreen(props) {
                   <td>{order.totalPrice}</td>
                   <td>{order.isPaid ? <div>&#10004;</div>  : "Not Paid!"}</td>
                   <td>
-                    <Link to={"/order/" + order._id}>DETAILS</Link>
+                    <a href={"/order/" + order._id}>DETAILS</a>
                   </td>
                 </tr>)}
               </tbody>

@@ -12,15 +12,12 @@ function SignInScreen (props){
     const loading = userSignIn && userSignIn.loading
     const error = userSignIn && userSignIn.error;
     const dispatch = useDispatch();
-    const redirect = props.location.search?props.location.search.split("=")[1]:'/';
+    const redirect = props.location.search ? props.location.search.split("=")[1] : '/';
 
     useEffect(() => {
         if(userInfo){
             props.history.push(redirect);
         }
-        return () => {
-            //
-        };
     }, [userInfo, props.history, redirect]);
     
     const submitHandler = (e) => {

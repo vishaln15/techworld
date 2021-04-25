@@ -31,9 +31,6 @@ function CreateProductScreen (props){
             setModalVisible(false);
         }
         dispatch(listProducts())
-        return () => {
-            //
-        };
     }, [successSave, successDelete, dispatch]);
     
     const openModal = (product) => {

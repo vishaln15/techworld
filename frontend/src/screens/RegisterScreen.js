@@ -16,9 +16,6 @@ function RegisterScreen (props){
         if(userInfo){
             props.history.push(redirect);
         }
-        return () => {
-            //
-        };
     }, [userInfo, props.history, redirect]);
     
     const submitHandler = (e) => {

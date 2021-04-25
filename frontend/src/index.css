@@ -143,8 +143,9 @@ link {
   transition: all .25s;
   transform: translateX(-30rem);
   width: 30rem;
-  background-color: #f0f0f0;
+  background-color: #d8e3e7;
   height: 100%;
+
 }
 
 .sidebar.open{
@@ -163,6 +164,18 @@ link {
   position: absolute;
   right: .5rem;
   top: 1.5rem;
+}
+.categories {
+  padding: 0;
+  list-style-type: none;
+}
+.categories a {
+  display: flex;
+  padding: 1rem;
+}
+
+.categories a:hover {
+  background-color: #c0c0c0;
 }
 
 .category {

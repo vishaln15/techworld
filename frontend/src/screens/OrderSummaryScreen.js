@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { detailsOrder, payOrder } from '../actions/orderActions';
 
-function OrderScreen(props) {
+function OrderSummaryScreen(props) {
 
   const orderPay = useSelector(state => state.orderPay);
   const { loading: loadingPay, success: successPay} = orderPay;
@@ -18,10 +18,6 @@ function OrderScreen(props) {
     else{
       dispatch(detailsOrder(props.match.params.id));
     }
-    
-    return () => {
-    };
-
   }, [dispatch, props.match.params.id, successPay, props.history]);
 
   const handleSuccessPayment = () => {
@@ -130,4 +126,4 @@ function OrderScreen(props) {
     </div>
 }
 
-export default OrderScreen;
+export default OrderSummaryScreen;

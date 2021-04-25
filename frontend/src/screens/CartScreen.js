@@ -1,17 +1,18 @@
-import React, {useEffect}  from 'react';
-import { addToCart,removeFromCart } from '../actions/cartActions';
+import React, { useEffect }  from 'react';
+import { addToCart, removeFromCart } from '../actions/cartActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-function CartScreen(props){
+function CartScreen(props) {
 
-    const cart = useSelector(state=>state.cart);
+    const cart = useSelector(state => state.cart);
 
-    const{ cartItems } = cart;
+    const { cartItems } = cart;
 
     const productId = props.match.params.id;
-    const qty = props.location.search ? Number(props.location.search.split("=")[1]):1;
+    const qty = props.location.search ? Number(props.location.search.split("=")[1]) : 1;
     const dispatch = useDispatch();
+
     const removeFromCartHandler = (productId) => {
         dispatch(removeFromCart(productId));
     }
@@ -28,7 +29,7 @@ function CartScreen(props){
     
     return <div className="cart">
        
-        <Link to="/">&larr;&nbsp;Back to result</Link>
+    <Link to="/">&larr;&nbsp;Back to result</Link>
     <div className="cart-list">
       <ul className="cart-list-container">
         <li>
@@ -76,18 +77,17 @@ function CartScreen(props){
             )
         }
       </ul>
-
     </div>
+
     <div className="cart-action">
       <h3>
-        Subtotal ( {cartItems.reduce((a, c) => Number(a) + Number(c.qty), 0)} items)
+        Subtotal ( {cartItems.reduce((a, c) => a + Number(c.qty), 0)} items)
         :
         ₹ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
       </h3>
       <button onClick={checkoutHandler} className="button primary full-width" disabled={cartItems.length === 0}>
         Proceed to Checkout
       </button>
-
     </div>
   </div>
 }

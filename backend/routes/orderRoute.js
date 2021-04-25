@@ -1,5 +1,6 @@
 import express from 'express';
 import Order from '../models/orderModel';
+import Product from '../models/productModel';
 import { isAuth } from '../util'
 
 const router = express.Router();
@@ -45,6 +46,15 @@ router.post("/", isAuth, async (req, res) => {
 });
 
 router.put("/:id/pay", isAuth, async (req, res) => {
+    const reqOrder = req.body;
+    const reqOrderitems = reqOrder.orderItems;
+
+    reqOrderitems.forEach(async (item) => {
+      var product = await Product.findById(item.product);
+      product.countInStock = product.countInStock - item.qty;
+      await product.save();
+    });
+
     const order = await Order.findById(req.params.id);
     if (order) {
       order.isPaid = true;
@@ -57,6 +67,6 @@ router.put("/:id/pay", isAuth, async (req, res) => {
     } else {
       res.status(404).send({ message: 'Order not found.' })
     }
-  });
+});
 
 export default router;
