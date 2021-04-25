@@ -42,6 +42,11 @@ function ProfileScreen(props) {
 
   return <div className="profile">
     <div className="profile-info">
+      {userInfo.isAdmin && 
+      <Link to='/products/createProduct'>
+        <button className="button createproduct">Product List</button>
+        </Link>
+      }
       <div className="form">
         <form onSubmit={submitHandler} >
           <ul className="form-container">

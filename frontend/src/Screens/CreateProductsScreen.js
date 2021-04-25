@@ -13,6 +13,7 @@ function CreateProductScreen (props){
     const [category, setCategory] = useState('');
     const [countInStock, setCountInStock] = useState('');
     const [description, setDescription] = useState('');
+    const [rating, setRating] = useState('');
 
     const productList = useSelector(state => state.productList);
     const { products } = productList;
@@ -44,14 +45,15 @@ function CreateProductScreen (props){
         setImage(product.image);
         setBrand(product.brand);
         setCategory(product.category);
-        setCountInStock(product.countInStock);       
+        setCountInStock(product.countInStock);
+        setRating(product.rating);    
     }
 
     const submitHandler = (e) => {
         e.preventDefault();
         dispatch(saveProduct({
             _id: id,
-            name, price, image, brand, category, countInStock, description}));
+            name, price, image, brand, category, countInStock, description, rating}));
     }
 
     const deleteHandler = (product) => {
@@ -130,6 +132,15 @@ function CreateProductScreen (props){
                     <textarea name="description" value={description} id="description" onChange={(e) => setDescription(e.target.value)}>
                     </textarea>
                 </li>
+
+                <li>
+                    <label htmlFor="rating">
+                        Rating
+                    </label>
+                    <input name="rating" value={rating} id="rating" onChange={(e) => setRating(e.target.value)}>
+                    </input>
+                </li>
+
                 <li>
                     <button type="submit" className="button primary">{id ? "Update":"Create"}</button>
                 </li>
@@ -149,6 +160,7 @@ function CreateProductScreen (props){
                         <th>ID</th>
                         <th>Name</th>
                         <th>Price</th>
+                        <th>Stock</th>
                         <th>Category</th>
                         <th>Brand</th>
                         <th>Action</th>
@@ -159,6 +171,7 @@ function CreateProductScreen (props){
                         <td>{product._id}</td>
                         <td>{product.name}</td>
                         <td>{product.price}</td>
+                        <td>{product.countInStock}</td>
                         <td>{product.category}</td>
                         <td>{product.brand}</td>
                         <td>
