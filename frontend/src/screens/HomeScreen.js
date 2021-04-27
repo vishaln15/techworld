@@ -16,7 +16,7 @@ function HomeScreen (props){
 
     return (
         <>
-        { category && <h2 className="category">{category}</h2> }
+        { category ? <h2 className="category">{category}</h2> : <h2 className="category">All Products</h2>}
         {loading ? <div>Loading...</div> :
         error ? <div>{error}</div> :
         <ul className="products">
