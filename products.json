@@ -1,0 +1,322 @@
+[
+    {
+        "name": "iPhone 12 Mini",
+        "category": "Phones",
+        "image": "/images/iPhone12mini.jpg",
+        "price": 84900,
+        "brand": "Apple",
+        "rating": 4.5,
+        "description": "5.4-inch (13.7 cm diagonal) Super Retina XDR display | Ceramic Shield, tougher than any smartphone glass | A14 Bionic chip, the fastest chip ever in a smartphone | Advanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording : 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording | Industry-leading IP68 water resistance | Supports MagSafe accessories for easy attach and faster wireless charging | iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more",
+        "countInStock": 12
+    },
+    {
+        "name": "HP 15 Entry Level 15.6-inch HD Laptop",
+        "category": "Laptops",
+        "image": "/images/hp15entry.jpg",
+        "price": 23990,
+        "brand": "HP",
+        "rating": 3.8,
+        "description": "Processor: AMD 3020e (Base Clock Speed 1.2 GHz, Up to 2.6GHz Max Boost Clock, 4 MB L3 cache, 2 cores) Operating System: Windows 10 Home | In the box: Laptop with included battery, charger Display: 15.6-Inch HD Display, 220 nits, 45% NTSC Memory & Storage: 4 GB DDR4 SDRAM (1 x 4 GB) | 1TB HDDGraphics: AMD Radeon Graphics Camera & Microphone: HP TrueVision HD camera with integrated dual array digital microphone Ports: 1 SuperSpeed USB 3.1 Type-C (5Gbps), 2 SuperSpeed USB Type-A (5Gbps), 1 HDMI 1.4b, 1 RJ-45, 1 SD card reader | Without CD-Drive",
+        "countInStock": 10
+    },
+    {
+        "name": "Dell Inspiron 3502 15.6-inch HD Display Laptop",
+        "category": "Laptops",
+        "image": "/images/dell3502.jpg",
+        "price": 27390,
+        "brand": "Dell",
+        "rating": 3.8,
+        "description": "Processor: Intel Pentium Silver N5030 Processor (4MB Cache, up to 3.1 GHz) Memory & Storage:4GB RAM | 256GB M.2 PCIe NVMe Solid State Drive Display:15.6-inch HD Anti-glare LED Backlight Narrow Border WVA Display Graphics: Intel UHD Graphics with shared graphics memory Operating System & Software: Windows 10 Home | Microsoft Office Home and Student 2019 I/O ports: USB 3.2 Gen 1 (x2), USB2.0 (x1), HDMI 1.4(x1),One SD-card slot ,RJ45 - 10/100Mbps",
+        "countInStock": 12
+    },  
+    {
+        "name": "iPhone 12 Pro Max",
+        "category": "Phones",
+        "image": "/images/iPhone12ProMax.jpg",
+        "price": 135900,
+        "brand": "Apple",
+        "rating": 4.6,
+        "description": "6.7-inch (17 cm diagonal) | Super Retina XDR display | Ceramic Shield, tougher than any smartphone glass | A14 Bionic chip - the fastest chip ever in a smartphone | Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras - 5x optical zoom range  Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording :   LiDAR Scanner for improved AR experiences, Night mode portraits : 12MP TrueDepth front camera with Night mode : 4K Dolby Vision HDR recording | Industry-leading IP68 water resistance | Supports MagSafe accessories for easy attach and faster wireless charging |iOS with redesigned widgets on the Home screen : all-new App Library : App Clips and more",
+        "countInStock": 8
+    },
+    {
+        "name": "ASUS VivoBook 14 (2020)",
+        "category": "Laptops",
+        "image": "/images/asus14.jpg",
+        "price": 24990,
+        "brand": "Asus",
+        "rating": 3.6,
+        "description": "Processor: 10th Gen Intel Pentium Silver N5030, 1.1 GHz Base Speed, Up to 3.1 GHz Turboboost Speed, 4 cores, 4 Threads, 4MB Cache Memory & Storage: 4GB SO-DIMM DDR4 2400MHz RAM, Upgradeable up to 8GB using 1x SO-DIMM Slot with | Storage: 1TB HDD 2.5-inch SATA 5400RPM with empty M.2 2280 Slot Graphics: Integrated Intel UHD Graphics 605 Display: 14-inch LED-Backlit LCD, FHD (1920 x 1080) 16:9, 220nits, NanoEdge bezel, Anti-Glare Plane with 45% NTSC, 82% Screen-To-Body Ratio Operating System: Pre-loaded Windows 10 Home with lifetime validity Design & battery: Up to 19.9mm Thin | NanoEdge Bezels | Thin and Light Laptop | Laptop weight: 1.6 kg | 37WHrs, 2-cell Li-ion battery | Up to 6 hours battery life ;Note: Battery life depends on conditions of usage Keyboard: Chiclet Keyboard with 1.4mm Key Travel",
+        "countInStock": 5
+    },
+    {
+        "name": "Samsung Galaxy S21 Ultra 5G",
+        "category": "Phones",
+        "image": "/images/s21ultra5g.jpg",
+        "price": 105999,
+        "brand": "Samsung",
+        "rating": 4.2,
+        "description": "Quad rear camera setup- Main Camera 108MP + Ultra Wide 12MP Dual Pixel Camera + Tele1 3X 10MP Dual Pixel Camera + Tele2 10x 10MP Dual pixel camera : 40MP front facing camera | (6.8-inch) Dynamic AMOLED 2X Display, WQHD+ resolution with 3200 X 1440 pixels resolution, 515 PPI with 16M color | Android Pie v10.0 operating system with 2.9GHz Exynos 2100 octa core process | 12GB RAM | 256GB internal Storage | Dual SIM (nano+nano) dual-standby (5G) | 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
+        "countInStock": 10
+    },
+    {
+        "name": "Lenovo IdeaPad Slim 3",
+        "category": "Laptops",
+        "image": "/images/lenovoslim3.jpg",
+        "price": 29885,
+        "brand": "Lenovo",
+        "rating": 4,
+        "description": "Processor: Intel Celeron N4020 | Speed: 1.1 GHz (Base) - 2.8 GHz (Max) | 2 Cores | 4MB Cache OS: Pre-Loaded Windows 10 Home with Lifetime Validity Memory and Storage: 4GB RAM DDR4 | 256 GB SSD Display: 15.6-inch HD (1366x768) | Brightness: 220 nits | Anti-Glare Design: 1.99 cm Thin and 1.7 kg Light | 2-Sided Narrow Bezel Battery Life: 5 Hours | 35Wh Battery Camera (Built in): HD 720p Camera with Privacy Shutter | Integrated Dual Array Microphone",
+        "countInStock": 15
+    },
+    {
+        "name": "HP Chromebook 14a",
+        "category": "Laptops",
+        "image": "/images/hpchrome14a.jpg",
+        "price": 24990,
+        "brand": "HP",
+        "rating": 3.7,
+        "description": "GOOGLE ASSISTANT: Voice-Enabled Google Assistant built-in, work faster and smarter without lifting a finger or switching screens. Ask questions, set reminders, play videos, control your home, and more. Make Google do it. BOOTS IN SECONDS: Powered by Chrome OS with automatic software updates so youâll always have the latest virus protection. It starts up in less than 10 seconds, stays fast throughout the day, and wonât slow down over time PROCESSOR: Intel Celeron N4020 (1.1 GHz base frequency, up to 2.8 GHz burst frequency, 4 MB L2 cache, 2 cores) APPS: Access to favorite apps from Google Play like Google Drive, Gmail, YouTube, Evernote, Slack, Infinite Painter, Lightroom, Whatsapp, MS Office and many more MEMORY & STORAGE: 4 GB DDR4-2400 SDRAM | HARD DRIVE: 64 GB eMMC | Expandable up to 256 GB | 100 GB Google Drive storage",
+        "countInStock": 8
+    },
+    {
+        "name": "Samsung Galaxy A72",
+        "category": "Phones",
+        "image": "/images/a72.jpg",
+        "price": 34999,
+        "brand": "Samsung",
+        "rating": 4.2,
+        "description": "64MP+12MP+8MP+5MP Quad camera setup-64MP (F1.8) OIS AF (F 1.8) main camera + 12MP (F2.2) Ultra wide camera , +8MP (F2.4) AF Tele 3X + 5MP (2.4) Macro Camera| 32MP (F2.2) front camera | 16.95 centimeters (6.7-inch) FHD+ Super AMOLED Plus- infinity O display,90hz refresh rate, FHD+ resolution with 1080 x 2400 (FHD+) pixls , 407 PPI with 16M colours | Memory, Storage & SIM: 8GB RAM | 128GB internal memory expandable up to 1TB| Dual SIM (nano+nano) dual-standby (4G+4G) | Android 11, v11.0 operating system, One UI 3.1 with SDM720G (2 x 2.3GHz + 6 x 1.8GHz) octa core processor | 5000mAH lithium-ion battery,with 25w fast charging",
+        "countInStock": 13
+    },
+    {
+        "name": "HP Pavilion Gaming",
+        "category": "Laptops",
+        "image": "/images/hppavilion.jpg",
+        "price": 71425,
+        "brand": "HP",
+        "rating": 4.3,
+        "description": "Processor: Intel Core i5-9300H (2.4 GHz base frequency, up to 4.1 GHz with Intel Turbo Boost Technology, 8 MB L3 cache, 4 cores) Memory: 8 GB DDR4-2666 SDRAM (1 x 8 GB); Storage: 512 GB PCIe NVMe M.2 SSD Display: 15.6 Inch FHD IPS anti-glare micro-edge WLED-backlit, 250 nits, 45% NTSC (1920 x 1080) Graphics: NVIDIA GeForce GTX 1650 Graphics (4 GB GDDR5 dedicated) Operating System: Pre-loaded Windows 10 Home with lifetime validity In the box: Laptop with included battery and charger Ports: 1 USB 3.1 Gen 2 Type-C (10 Gb/s signaling rate, Power Delivery 3.0, DisplayPort 1.4, HP Sleep and Charge); 1 USB 3.1 Gen 1 Type-A (HP Sleep and Charge); 2 USB 3.1 Gen 1 Type-A (Data Transfer Only); 1 HDMI; 1 AC smart pin; 1 RJ-45; 1 headphone/microphone combo",
+        "countInStock": 17
+    },
+    {
+        "name": "OnePlus 9 Pro 5G",
+        "category": "Phones",
+        "image": "/images/oneplus9pro.jpg",
+        "price": 64999,
+        "brand": "OnePlus",
+        "rating": 3.9,
+        "description": "Rear Quad Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Sensor size of 1/1.56'', 8 MP Telepoto Lens, 2 MP Monochorme Lens,16 MP Front Camera |  Qualcomm Snapdragon 888 Processor with Adreno 660 GPU | 6.7 Inches Fluid AMOLED Display with 120Hz refresh rate with Latest LTPO technology | OnePlus Oxygen OS based on Android 11 | Comes with 4500 mAh Battery with 65W Wired Charging and 50W Wireless Charging capability",
+        "countInStock": 16
+    },
+    {
+        "name": "Lenovo IdeaPad Gaming 3",
+        "category": "Laptops",
+        "image": "/images/lenovoideapad.jpg",
+        "price": 77990,
+        "brand": "Lenovo",
+        "rating": 4.5,
+        "description": "Processor: 10th Gen Intel Core i7-10750H | Speed: 2.6 GHz (Base) - 5.0 GHz (Max) | 6 Cores | 12MB Cache OS: Pre-Loaded Windows 10 Home with Lifetime Validity Memory and Storage: 8GB RAM DDR4-2933, Upgradable up to 16GB | 1 TB HDD + 256 GB SSD Graphics: NVIDIA GeForce GTX 1650 4GB GDDR6 Dedicated Graphics Display: 15.6-inch Full HD (1920x1080) | Brightness: 250 nits | Anti-Glare | IPS Technology | 60 Hz Refresh Rate Cooling: 5th Generation Thermal Engineering with Q Control Battery Life: 7 Hours | Rapid Charge (Up to 80% in 1 Hour)",
+        "countInStock": 11
+    },
+    {
+        "name": "ASUS TUF Gaming F15",
+        "category": "Laptops",
+        "image": "/images/asustuf.jpg",
+        "price": 84990,
+        "brand": "Asus",
+        "rating": 4.6,
+        "description": "Processor: 10th Gen Intel Core i5-10300H Processor, 2.5 GHz (8MB Cache, up to 4.5 GHz, 4 Cores, 8 Threads) Access to over 100 high-quality PC games on Windows 10 One-month subscription to Xbox Game Pass that’s included with the purchase of your device Operating System: Pre-loaded Windows 10 Home with lifetime validity Memory & Storage: 16GB DDR4 2933MHz RAM, Upgradeable up to 32GB using 2x SO-DIMM Slot| Storage: 1TB M.2 NVMe PCIe 3.0 SSD Graphics: Dedicated NVIDIA GeForce GTX 1660 Ti GDDR6 6GB VRAM Display: 15.6-inch (16:9) LED-backlit FHD (1920x1080) 144Hz Refresh Rate, Anti-Glare IPS-level Panel with 45% NTSC",
+        "countInStock": 20
+    },
+    {
+        "name": "Acer Nitro 5",
+        "category": "Laptops",
+        "image": "/images/acernitro.jpg",
+        "price": 89990,
+        "brand": "Acer",
+        "rating": 4.1,
+        "description": "Processor: Intel Core i5-10300H processor, turbo up to 4.5 Ghz NVIDIA RTX 3060 with 6 GB of dedicated GDDR6 VRAM Refresh Rate of 144 Hz with Enhanced Ray Tracing and improved Articifial intelligence with RTX 3060 Gen 3 Tensor Cores Display: 15.6-inch display with IPS (In-Plane Switching) technology, Full HD DTS X:Ultra Audio, featuring optimized Bass, Loudness, Speaker Protection with up to 6 custom content modes by smart amplifier",
+        "countInStock": 2
+    },
+    {
+        "name": "OnePlus 9 5G",
+        "category": "Phones",
+        "image": "/images/oneplus9.jpg",
+        "price": 54999,
+        "brand": "OnePlus",
+        "rating": 3.5,
+        "description": "Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens, 2 MP Monochorme Lens : 16 MP Front Camera | Qualcomm Snapdragon 888 Processor with Adreno 660 GPU | 6.55 Inches Fluid AMOLED Display with 120Hz refresh rate |  OnePlus Oxygen OS based on Android 11 | Comes with 4500 mAh Battery with 65W Wired Charging | Hands-Free access to Alexa: Alexa on your phone lets you make phone calls, open apps, control smart home devices, access the library of Alexa skills, and more using just your voice while on-the-go. Download the Alexa app and complete hands-free setup to get started. Just ask - and Alexa will respond instantly",
+        "countInStock": 20
+    },
+    {
+        "name": "Pixel5 5G",
+        "category": "Phones",
+        "image": "/images/pixel5g.jpg",
+        "price": 76500,
+        "brand": "Google",
+        "rating": 4.6,
+        "description": "Google Pixel 5 5G (8GB RAM, 128GB) Just Black | 5G capable smartphone gives you an extra boost of speed so you can download a movie in seconds, enjoy smooth streaming in ultra clear HD, play games at home and on the go, and even share your 5G speed with friends | Your phone will automatically receive the latest OS and security updates for at least 3 years; the custom-made Titan M chip helps secure the operating system and sensitive data, like passwords | Take vibrant photos on your phone even in the dark with Night Sight, bring studio quality light to your pictures of people with Portrait Light, and get more scenery and people in the shot with the rear facing ultrawide lens | Pixel 5 is a water resistant smart phone; the metal unibody can handle being submerged in 1.5 meters of fresh water for 30 minutes",
+        "countInStock": 13
+    },
+    {
+        "name": "Dell G3 3500 Gaming",
+        "category": "Laptops",
+        "image": "/images/dellg3.jpg",
+        "price": 73990,
+        "brand": "Dell",
+        "rating": 4.1,
+        "description": "Processor:10th Generation Intel i5-10300H Processor (8 MB Cache, up to 4.5 GHz, 4 cores) Memory & Storage:8GB, 2x4GB, DDR4,Dual Channel 2933MHz upgradable to 16GB | 256 GB M.2 PCIe NVMe Solid State Drive | 1TB 5400 RPM 2.5 Hard Disk Drive Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription Keyboard & Battery: Backlit keyboard | 3 Cell Battery, 51 Whr,Upto 10 hours battery life | Laptop weight 2.3 Kg I/O Ports:2xUSB 3.2 Gen 1 port with PowerShare | 2x USB 2.0 ports | 1x HDMI 2.0 port |1x SD-card slot | 1x RJ45 port | 1x headset port",
+        "countInStock": 14
+    },
+    {
+        "name": "Acer Swift 3",
+        "category": "Laptops",
+        "image": "/images/acerswift3.jpg",
+        "price": 63499,
+        "brand": "Acer",
+        "rating": 3.9,
+        "description": "1 GhzGHz Intel Intel Core i5-1035G1 10th Gen processor 8GB DDR4 RAM 14-inch screen, Intel UHD Graphics Graphics Windows 10 Home 64-bit operating system 13 hours battery life, 1.19kg laptop Processor: Intel Core i5-1035G1 processor, turbo up to 3.6 Ghz | Display: 14-inch display with IPS technology, Full HD 1920 x 1080, high-brightness Acer ComfyViewTM LED-backlit TFT LCD Memory: 8 GB of onboard LPDDR4 system memory | Storage: 512 GB, PCIe Gen3 8 Gb/s up to 4 lanes, NVMe| Design: 1.19 kgs light, 1.59cm thin",
+        "countInStock": 16
+    },
+    {
+        "name": "Pixel4a",
+        "category": "Phones",
+        "image": "/images/pixel4a.jpg",
+        "price": 36397,
+        "brand": "Google",
+        "rating": 4.4,
+        "description": "Capture great photos using your cell phone on the 12 MP dual pixel rear camera with features like Live HDR+, Night Sight, and Portrait Mode | The Adaptive Battery lasts up to 24 hours as it learns your favorite apps and reduces power to the ones you rarely use | HDR+ makes your photos look better by automatically adjusting for color and lighting | Night Sight lets you capture rich detail and color even in the dark | Get things done with just your voice: Send texts, get directions and reminders, and multitask on the go on your mobile phone",
+        "countInStock": 7
+    },
+    {
+        "name": "ASUS ZenBook 14 (2020)",
+        "category": "Laptops",
+        "image": "/images/asuszenbook.jpg",
+        "price": 82998,
+        "brand": "Asus",
+        "rating": 4.6,
+        "description": "Processor: 10th Gen Intel Core i5-1035G1 Processor, 1.0 GHz (6MB Cache, up to 3.6 GHz, 4 Cores, 8 Threads) Memory & Storage: 8GB LPDDR4X 3733MHz onboard RAM | Storage: 512GB M.2 NVMe PCIe 3.0 SSD Graphics: Integrated Intel UHD Graphics Display: 14-inch LED-backlit Full HD (1920 x 1080), 16:9, anti-glare Panel, 300nits brightness, 100% sRGB, 4-sided NanoEdge design with up to 90% screen-to-body ratio, IPS-level wide-view technology Software Included: Pre-installed MS Office Home and Student 2019 | Operating System: Pre-loaded Windows 10 Home with lifetime validity Design & battery: Up to 2.5mm-thin bezel | Metallic Chassis |Thin and Light Laptop | Laptop weight: 1.17 kg | 67WHrs, 4-cell, lithium-polymer battery | Up to 22 hours battery life ;Note: Battery life depends on conditions of usage Keyboard: Edge-to-edge design, full-size backlit, with 1.4mm key travel | Touchpad : Glass-covered, Precision Touchpad with NumberPad 2.0, i.e., integrated LED-illuminated numeric keypad",
+        "countInStock": 11
+    },
+    {
+        "name": "Mi 10i 5G",
+        "category": "Phones",
+        "image": "/images/mi10i.jpg",
+        "price": 21999,
+        "brand": "Xiaomi",
+        "rating": 4.1,
+        "description": "Camera: 108 MP Quad Rear camera with Ultra-wide and Macro mode | Processor: Octa-core Snapdragon 750G with 8nm process and support for next generation 5G Network | Display: 16.9 centimeters (6.67-inch) FHD+ Full screen dot display with AdaptiveSync 120Hz refresh rate | Battery: 4820 mAh large battery with 33W fast charger in-box and Type-C connectivity | Memory, Storage & SIM: 6GB RAM | 128GB storage expandable up to 512GB with microSD card slot",
+        "countInStock": 18
+    },
+    {
+        "name": "Dell XPS 9360 ",
+        "category": "Laptops",
+        "image": "/images/dellxps.jpg",
+        "price": 76999,
+        "brand": "Dell",
+        "rating": 3.7,
+        "description": "Processor: Intel Core i5 - 8250U processor, 2 GHz base processor speed Operating system: Pre-loaded Windows 10 Home with lifetime validity Display: 13.3-inch FHD (1920 x 1080) display Memory & Storage: 8GB DDR3 RAM with Intel UHD Graphics | Storage: 256GB SSD Design & battery: Laptop weight 1.5 kg |(Average battery life is not given), Lithium battery Warranty: This genuine Dell laptop comes with 1 year onsite domestic warranty from Dell covering Hardware Issues and not covering physical damage. For more details, see Warranty section below. Pre-installed Software: Windows 10 Home, Ms Office Home & Student 2016 |In the Box: Laptop with included battery and charger Ports & CD drive: 1 USB 3.0 | Without CD drive",
+        "countInStock": 18
+    },
+    {
+        "name": "iPhone 11 Pro",
+        "category": "Phones",
+        "image": "/images/iPhone11Pro.jpg",
+        "price": 86900,
+        "brand": "Apple",
+        "rating": 4.5,
+        "description": "5.8-inch (14.7 cm diagonal) Super Retina XDR OLED display | Water and dust resistant (4 meters for up to 30 minutes, IP68) | Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras; Night mode, Portrait mode, and 4K video up to 60fps : 12MP TrueDepth front camera with Portrait mode, 4K video, and Slo-Mo | Face ID for secure authentication | A13 Bionic chip with third-generation Neural Engine | Fast charge with 18W adapter included",
+        "countInStock": 12
+    },
+    {
+        "name": "HP Spectre x360",
+        "category": "Laptops",
+        "image": "/images/hpspectre.jpg",
+        "price": 107890,
+        "brand": "HP",
+        "rating": 4.3,
+        "description": "1.1GHz Intel i5-1035G4 10th Gen processor8GB DDR4 RAM 512GB SSD 13-inch screen, Intel Iris Plus Graphics Windows 10, Home operating system 1.27kg laptop Country of Origin: China",
+        "countInStock": 19
+    },
+    {
+        "name": "LG Gram 10th Gen",
+        "category": "Laptops",
+        "image": "/images/lggram.jpg",
+        "price": 64999,
+        "brand": "LG",
+        "rating": 4,
+        "description": "14 Inch Ultra-Lightweight (990 grams) Laptop with 10th Gen Intel i5-1035G7 w/Intel Iris Plus RAM 8GB DDR 4, 256GB SSD, Windows 10 Home Upto 18.5 hrs backup with 72Wh Battery USB3.1 (x2), USB3.1 Type C (x1, Thunderbolt 3, USB PD), DC-In, HDMI, HP Out",
+        "countInStock": 3
+    },
+    {
+        "name": "HP OMEN 10th Gen",
+        "category": "Laptops",
+        "image": "/images/hpomen.jpg",
+        "price": 118000,
+        "brand": "HP",
+        "rating": 4.1,
+        "description": "2.36kg laptop Windows 10 Home operating system 16GB DDR4 RAM 1.6GHz Intel i7-10750H 10th Gen processor GTX 1650ti  144hz display 1TB SSD",
+        "countInStock": 14
+    },
+    {
+        "name": "realme 8 Pro",
+        "category": "Phones",
+        "image": "/images/realme8pro.jpg",
+        "price": 19890,
+        "brand": "realme",
+        "rating": 3.9,
+        "description": "6 GB RAM | 128 GB ROM | Expandable Upto 256 GB | 16.26 cm (6.4 inch) Full HD+ Display | 108MP + 8MP + 2MP + 2MP | 16MP Front Camera | 4500 mAh Battery | Qualcomm Snapdragon 720G Processor | Super AMOLED Display",
+        "countInStock": 15
+    },
+    {
+        "name": "Dell Alienware m15(R3) ",
+        "category": "Laptops",
+        "image": "/images/dellalienware.jpg",
+        "price": 319990,
+        "brand": "Dell",
+        "rating": 3,
+        "description": "Processor:10th Generation Intel Core i9-10980HK Memory & storage:32GB DDR4 2666MHz | 1TB NVMe M.2 SSD Display:15.6-inch UHD OLED HDR 500 with Tobii Light Graphics:NVIDIA GeForce RTX 2080 with 8GB GDDR6 Operating System & Software: Windows 10 Home Plus Single Language | Microsoft Office Home and Student 2019 | McAfee Live Safe 12 month Subscription Keyboard & Battery: RGB per key Keyboard | 6-Cell battery 86WHr with Alienware Battery Defender technology I/O ports:1xRJ-45 Killer Ethernet | 3xType-A USB 3.2 Gen 1|1xThunderbolt 3 Port | 1x Alienware Graphics Amplifier | 1x HDMI 2.0b | 1x microSD 5.1 | 1x Audio Out",
+        "countInStock": 3
+    },
+    {
+        "name": "Acer Predator Helios 300",
+        "category": "Laptops",
+        "image": "/images/acerpredator.jpg",
+        "price": 129990,
+        "brand": "Acer",
+        "rating": 4.6,
+        "description": "The 39.6 cm (15.6) IPS display of this gaming laptop from Acer comes clad in a black metal body that oozes style. It comes equipped with 6 GB of NVIDIA Geforce RTX 2060 so that you can enjoy an enhanced and seamless gaming experience It comes equipped with the 10th Gen Intel Core i7 processor with 16 GB of DDR4 2666 RAM, which can be expanded to up to 32 GB so that you can multitask with ease. This Acer laptop boasts a refresh rate of 144 Hz and an overdrive response of 3 ms so that the visual experience of your game is lag-free, fluid, and seamless. The HDMI 2.0 and the DisplayPort 1.4 allow you to connect two more displays with this laptop so that you have up to 3 displays to enhance your gaming experience and widen your play area",
+        "countInStock": 9
+    },
+    {
+        "name": "Samsung Galaxy Note 20 Ultra 5G",
+        "category": "Phones",
+        "image": "/images/note20ultra.jpg",
+        "price": 104999,
+        "brand": "Samsung",
+        "rating": 4.3,
+        "description": "108+12+12MP triple rear camera | 10MP front camera | 17.45 centimeters (6.9-inch) WQHD+ dynamic Amoled display with 3088 x 1440 pixels resolution | Memory, Storage & SIM: 12GB RAM | 256GB internal memory expandable up to 1TB | Dual SIM (nano+nano) dual-standby (4G+4G) | Android v10.0 operating system with Exynos 990 octa core processor | 4500mAH lithium-ion battery (Non-removable) | 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase | Box also includes: Adaptor, Sim ejector pin, user manual, charging cable",
+        "countInStock": 10
+    },
+    {
+        "name": "MSI GE75 Raider 10SFS",
+        "category": "Laptops",
+        "image": "/images/msige75.jpg",
+        "price": 185450,
+        "brand": "MSI",
+        "rating": 5,
+        "description": "Process Core i7-10875H+HM470 RAM DDR IV 8GB*2 (3200MHz) Storage : 512GB NVMe PCIe SSD +1TB (SATA) 7200rpm GPU : NVIDIA RTX2070 SUPER, GDDR6 8GB WLAN : Killer Wi-Fi 6 AX1650i (2*2 ax) + BT5.1 17.3-inch FHD (1920*1080), 240Hz Thin Bezel, close to 100%sRGB Keyboard : Per key RGB steelseries KB",
+        "countInStock": 4
+    },
+    {
+        "name": "ASUS ROG Strix G17",
+        "category": "Laptops",
+        "image": "/images/asusrog.jpg",
+        "price": 98750,
+        "brand": "Asus",
+        "rating": 4.5,
+        "description": "Processor: 10th Gen Intel Core i7-10750H, 2.6 GHz Base Speed, Up to 5.0 GHz Turbo Boost Speed, 12MB Cache, 6 Cores, 12 Threads Access to over 100 high-quality PC games on Windows 10 One-month subscription to Xbox Game Pass that’s included with the purchase of your device Operating System: Pre-loaded Windows 10 Home with lifetime validity Memory & Storage: 16GB (2x 8GB) DDR4 2933MHz Dual Channel RAM, Upgradeable up to 32GB using 2x SO-DIMM Slot with | Storage: 512GB M.2 NVMe PCIe 3.0 SSD with 2x empty M.2 Slot for SSD Storage Expansion Graphics: Dedicatd NVIDIA GeForce GTX 1660Ti GDDR6 6GB VRAM Display: 17.3-inch (16:9) Full HD (1920x1080), 120Hz Refresh Rate, Anti-Glare, vIPS-level panel with 45% NTSC, Up to 81.5% screen to body ratio",
+        "countInStock": 6
+    }
+]

@@ -50,7 +50,7 @@ function App() {
                   <li><Link to="/category/Phones">Phones</Link></li>
                   <li><Link to="/category/Laptops">Laptops</Link></li>
                   <li><Link to="/category/Watches">Watches</Link></li>
-                  <li><Link to="/category/AudioDevices">AudioDevices</Link></li>
+                  <li><Link to="/category/Audio">Audio</Link></li>
                 </ul>
             </aside>
 

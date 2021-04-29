@@ -85,8 +85,8 @@ body{
 }
 
 .product-image{
-  max-width: 34rem;
-  max-height: 34rem;
+  max-width: 28rem;
+  max-height: 28rem;
 }
 
 a{
@@ -197,7 +197,7 @@ link {
 }
 
 .details-image img{
-  max-width: 60rem;
+  max-width: 35rem;
   widows: 100%;
 }
 
