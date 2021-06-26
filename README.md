@@ -7,22 +7,22 @@ TechWorld, inspired by Amazon Website is a MERN Stack web application built to m
 ## Functionalities
 
 1. Clear distinction between users and admin is established. 
-2. Users can view, choose and order products to an address. Order history is stored and can be viewed in the profile page. All orders have unique order number.
+2. Users can view, choose and order products to an address. Order history is stored and can be viewed in the profile page. All orders have unique order id.
 3. Home page has list of all products available and also contains a sidebar with product types including smartphones, laptops, watch and audio devices. Each product type when clicked opens a page with only that product type. 
 4. Product page has 3 vertical fields including product image, product description and product stock with add to cart button. 
-5. Cart page uses cookies and stores the chosen products with the quantity. Since it uses cookies, after the end of browser session the cookies are destroyed and the cart data resets. 
+5. Cart page uses cookies and stores the chosen products with the quantity. Since it uses cookies, after the end of the browser session the cookies are destroyed and the cart data resets. 
 6. Shipping page requires address input and payment method. 
 7. Order page automatically creates a unique order id for every order. 
-8. Users and Admin have profile page to edit name, email and password. 
-9. Every sigin is verified using JSON Web Token (JWT).
+8. Users and admin have profile page to edit name, email and password. 
+9. Every signin is verified using JSON Web Token (JWT).
 10. Admin has super user benefits to add new products, remove and edit existing products.  
 
 ## Properties used
 
 > - React: Components, Props, Events, Hooks, Router, Axios
 > - Redux: Store, Reducers, Actions
-> - Node & Express: Web API, Body Parser, JWT
-> - MongoDB: Mongoose, Aggregation
+> - Node & Express: Web API,  JWT
+> - MongoDB: Mongoose
 > - Development: ESLint, Babel, Git, GitHub
 
 ## Run locally
@@ -45,13 +45,13 @@ TechWorld, inspired by Amazon Website is a MERN Stack web application built to m
         $ npm install
         $ npm start
 
-5. Populate pre-existing users and products
+5. Populate pre-existing admin and products
 
     - Install JSON formatter extension on browser for better view of JSON objects.
-    - Run this on browser: http://localhost:5000/api/users
+    - Run this on browser: http://localhost:5000/api/users/createAdmin
     - This returns and renders an admin email and password object.
     - Run this on browser: http://localhost:5000/api/products
-    - Creates 6 sample products in MongoDB database.
+    - Creates a sample product in MongoDB database.
 
 6. Admin Login
 
@@ -61,14 +61,14 @@ TechWorld, inspired by Amazon Website is a MERN Stack web application built to m
 
 ## Known Issues
 
-- Signout and View order pages only update after refreshing the page.
+- Signout and View order pages update only after refreshing the page once.
 
 ## Future Work
 
 - Add file uploader api to upload image of new product.
-- Store data in S3 and deploy on heroku. 
+- Store data in S3 and deploy on Heroku. 
 - Add searchbar to search through products.
 
 ## Credits
 
-Adapted from https://github.com/basir/node-react-ecommerce . Huge thanks to **[Bassir Jafarzadeh](https://github.com/basir)** whose **[YouTube video](https://www.youtube.com/watch?v=Fy9SdZLBTOo)** helped us understand and implement every step. 
+Adapted from https://github.com/basir/node-react-ecommerce . Huge thanks to **[Bassir Jafarzadeh](https://github.com/basir)** whose **[YouTube video](https://www.youtube.com/watch?v=Fy9SdZLBTOo)** helped us understand and implement every step through the project. 
