@@ -2,7 +2,7 @@
 
 ## Description
 
-TechWorld, inspired by Amazon Website is a MERN Stack web application built to mimick the functionalities of an electronic store. 
+TechWorld, inspired by Amazon Website is a MERN Stack web application built to mimick the functionalities of an electronic store. ![HomeScreen](/HomeScreen.png)
 
 ## Functionalities
 
@@ -51,7 +51,8 @@ TechWorld, inspired by Amazon Website is a MERN Stack web application built to m
     - Run this on browser: http://localhost:5000/api/users/createAdmin
     - This returns and renders an admin email and password object.
     - Run this on browser: http://localhost:5000/api/products
-    - Creates a sample product in MongoDB database.
+    - Creates a sample product in MongoDB database. 
+    - Additionally, import the **products.json** file in MongoDB Compass to directly populate the products.
 
 6. Admin Login
 
