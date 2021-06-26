@@ -59,4 +59,16 @@ TechWorld, inspired by Amazon Website is a MERN Stack web application built to m
     - Enter admin email and password and click signin. 
 
 
+## Known Issues
 
+- Signout and View order pages only update after refreshing the page.
+
+## Future Work
+
+- Add file uploader api to upload image of new product.
+- Store data in S3 and deploy on heroku. 
+- Add searchbar to search through products.
+
+## Credits
+
+Adapted from https://github.com/basir/node-react-ecommerce . Huge thanks to **[Bassir Jafarzadeh](https://github.com/basir)** whose **[YouTube video](https://www.youtube.com/watch?v=Fy9SdZLBTOo)** helped us understand and implement every step. 
