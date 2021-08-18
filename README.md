@@ -4,7 +4,7 @@
 
 TechWorld, inspired by Amazon Website is a MERN Stack web application built to mimick the functionalities of an electronic store. 
 
-![Demo](/TechWorld Demo.gif)
+![TechWorld Demo](/'TechWorld Demo.gif')
 
 ## Functionalities
 
